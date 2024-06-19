@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Gallery App</h1>
+        <input type="file" id="file-input" multiple accept="image/*,video/*">
+        <button id="safe-folder-button">Safe Folder</button>
+        <button id="hide-button" style="display: none;">Hide Selected</button>
+        <button id="delete-button" style="display: none;">Delete Selected</button>
+    </header>
+    <main>
+        <div id="gallery"></div>
+        <div id="safe-folder" style="display: none;">
+            <h2>Safe Folder</h2>
+            <div id="safe-gallery"></div>
+        </div>
+        <div id="password-prompt" style="display: none;">
+            <label for="password-input">Enter Password:</label>
+            <input type="password" id="password-input">
+            <button id="submit-password">Submit</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
